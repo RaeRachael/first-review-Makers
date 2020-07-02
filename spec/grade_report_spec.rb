@@ -17,7 +17,7 @@ describe '#grade_report' do
     end
   end
   describe "two grade types" do
-    describe "mix of red and green" do
+    describe "mix of Green and Amber" do
       it "should return 'Green: 1\\nAmber: 1' " do
         expect(grade_report("Green, Amber")).to eq("Green: 1\nAmber: 1")
       end
