@@ -1,17 +1,17 @@
 def grade_report(string)
   grades = string.split(', ')
-  green = 0
-  amber = 0
-  red = 0
+  raise 'no input' if grades.length == 0
+  output_grades = {}
   grades.each do |grade|
-    green += 1 if grade == "Green"
-    amber += 1 if grade == "Amber"
-    red += 1 if grade == "Red"
+    if output_grades["#{grade}"] == nil
+      output_grades["#{grade}"] = 1
+    else
+      output_grades["#{grade}"] += 1
+    end
   end
-
-  return "Green: #{green}\nAmber: #{amber}" if green > 0 && amber > 0
-  return "Green: #{green}" if green > 0
-  return "Amber: #{amber}" if amber > 0
-  return "Red: #{red}" if red > 0
-  raise 'no input'
+  outputstring = ""
+  output_grades.each do |grade_type, number|
+    outputstring += "#{grade_type}: #{number}\n"
+  end
+  return outputstring.chomp
 end
