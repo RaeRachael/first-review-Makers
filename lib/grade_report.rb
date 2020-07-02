@@ -1,6 +1,13 @@
 def grade_report(string)
   grades = string.split(', ')
-  number = grades.length
-  type = grades[0]
-  return "#{type}: #{number}"
+  green = 0
+  amber = 0
+  grades.each do |grade|
+    green += 1 if grade == "Green"
+    amber += 1 if grade == "Amber"
+  end
+
+  return "Green: #{green}\nAmber: #{amber}" if green > 0 && amber > 0
+  return "Green: #{green}" if green > 0
+  return "Amber: #{amber}" if amber > 0
 end
