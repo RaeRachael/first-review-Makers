@@ -1,3 +1,5 @@
 def grade_report(string)
-  "Green: 1"
+  grades = string.split(', ')
+  number = grades.length
+  return "Green: #{number}"
 end
