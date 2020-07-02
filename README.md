@@ -15,3 +15,11 @@ green: number
 "Green"
 
 "Green: 1"
+
+"Amber"
+
+"Amber: 1"
+
+"Green, Amber"
+
+"Green: 1\nAmber: 1"
