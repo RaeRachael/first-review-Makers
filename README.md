@@ -20,6 +20,10 @@ green: number
 
 "Amber: 1"
 
+"Red"
+
+"Red: 1"
+
 "Green, Amber"
 
 "Green: 1\nAmber: 1"
