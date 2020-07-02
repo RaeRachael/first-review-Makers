@@ -12,5 +12,6 @@ def grade_report(string)
   return "Green: #{green}\nAmber: #{amber}" if green > 0 && amber > 0
   return "Green: #{green}" if green > 0
   return "Amber: #{amber}" if amber > 0
-  return "Red: #{red}"
+  return "Red: #{red}" if red > 0
+  raise 'no input'
 end

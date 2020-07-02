@@ -24,6 +24,10 @@ green: number
 
 "Red: 1"
 
+""
+
+raise error "no input"
+
 "Green, Amber"
 
 "Green: 1\nAmber: 1"
