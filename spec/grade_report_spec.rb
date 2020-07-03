@@ -40,4 +40,9 @@ describe '#grade_report' do
       end
     end
   end
+  describe "uses 'Uncounted' for incorrect grades" do
+    it "should return 'Uncounted: 1'" do
+      expect(grade_report("Gren")).to eq("Uncounted: 1")
+    end
+  end
 end

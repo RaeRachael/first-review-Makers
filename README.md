@@ -31,3 +31,7 @@ raise error "no input"
 "Green, Amber"
 
 "Green: 1\nAmber: 1"
+
+"Gren"
+
+"Uncounted: 1"
