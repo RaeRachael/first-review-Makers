@@ -4,6 +4,7 @@ def grade_report(string)
   output_grades = {}
   accepted_grades = ["Green", "Amber", "Red"]
   grades.each do |grade|
+    
     if output_grades["#{grade}"] == nil
       output_grades["#{grade}"] = 1
     else
